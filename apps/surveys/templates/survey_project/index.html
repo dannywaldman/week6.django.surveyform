@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/survey.css' %}">
+    </head>
+    <body>
+        <form method="POST" action="/surveys/process">
+            {% csrf_token %}
+            <div class="field">
+                <label>Your Name:</label>
+                <input type="text" name="name">
+            </div>
+            <div class="field">
+                <label>Dojo Location:</label>
+                <input type="text" name="location">
+            </div>
+            <div class="field">
+                <label>Favorite Language:</label>
+                <input type="text" name="language">
+            </div>
+            <span>Your comment (optional):</span>
+            <textarea name="comments" rows="10" cols="40"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

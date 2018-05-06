@@ -1,0 +1,43 @@
+form {
+    width: 500px;
+    margin: 50px auto;
+}
+
+.field {
+    padding: 5px 0;
+}
+
+label {
+    display:inline-block;
+    width:145px;
+}
+
+input {
+    display:inline-block;
+}
+
+form span {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+textarea {
+    display: block;
+}
+
+input[type='submit'] {
+    margin-top: 5px;
+}
+
+.field p {
+    display: inline-block;
+}
+
+#wrapper {
+    width: 600px;
+    margin: 50px auto;
+}
+
+.success {
+    background-color: #b7d7a8;
+}

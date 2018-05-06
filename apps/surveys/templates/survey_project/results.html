@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Survey Results</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/survey.css' %}">
+    </head>
+    <div id="wrapper">
+        <div class="success">
+            <p>Thanks for submitting the form! You have submitted the form {{ request.session.tries }} times now.</p>
+         </div>
+              <div class="field">
+                <label>Name:</label>
+                <p>{{ name }}</p>
+              </div>
+              <div class="field">
+                <label>Location:</label>
+                <p>{{ location }}</p>
+              </div>
+              <div class="field">
+                <label>Language:</label>
+                <p>{{ language }}</p>
+              </div>
+              <div class="field">
+                <label>Comments:</label>
+                <p>{{ comments }}</p>
+              </div>
+            <a href="/surveys">Go Back</a>
+         </div>
+</html>
